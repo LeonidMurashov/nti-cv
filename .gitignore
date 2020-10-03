@@ -1,4 +1,11 @@
+cascade_data/
+detector_data/
+.vscode/
+.ipynb_checkpoints/
+*.7z
+
 # Byte-compiled / optimized / DLL files
+
 __pycache__/
 *.py[cod]
 *$py.class
