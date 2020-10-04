@@ -3,6 +3,8 @@ detector_data/
 .vscode/
 .ipynb_checkpoints/
 *.7z
+cascade_class/negative
+cascade_class/positive
 
 # Byte-compiled / optimized / DLL files
 
