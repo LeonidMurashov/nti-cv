@@ -2,7 +2,9 @@ cascade_data/
 detector_data/
 cascade2_data/
 cascade2_data_val/
+legacy/
 .vscode/
+tmp/
 .ipynb_checkpoints/
 *.7z
 cascade_class/negative
