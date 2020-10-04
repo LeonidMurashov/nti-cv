@@ -9,6 +9,9 @@ tmp/
 *.7z
 cascade_class/negative
 cascade_class/positive
+cascade2_data_imagenet/
+cascade2_data_imagenet_val/
+logs/
 
 
 # Byte-compiled / optimized / DLL files
