@@ -29,6 +29,6 @@ def examiner_Cascade(img_path, cascade):
     img = cv2.imread(img_path)
     gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
     circles = cascade.detectMultiScale(gray)
-    if not circles.empty():
+    if circles.size:
         return(True)
     return(False) 
