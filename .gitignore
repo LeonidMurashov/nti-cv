@@ -9,6 +9,9 @@ tmp/
 *.7z
 cascade2_data_imagenet/
 cascade2_data_imagenet_val/
+cascade3_data_imagenet/
+cascade3_data_imagenet_val/
+imgaug/
 logs/
 
 cascade_class/dataset_v1/negative/
