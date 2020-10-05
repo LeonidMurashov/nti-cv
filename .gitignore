@@ -13,6 +13,15 @@ cascade2_data_imagenet/
 cascade2_data_imagenet_val/
 logs/
 
+cascade_class/dataset_v1/negative
+cascade_class/dataset_v1/positive
+cascade_class/dataset_v2/negative
+cascade_class/dataset_v2/positive
+cascade_class/dataset_v2/video_frames
+cascade_class/dataset_v2/cutted_negatives
+cascade_class/dataset_v2/positives_with_left_bottom
+cascade_class/results
+
 
 # Byte-compiled / optimized / DLL files
 
