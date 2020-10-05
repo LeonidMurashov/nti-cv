@@ -1,4 +1,6 @@
 import sys
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import tensorflow as tf
 import cv2
 import numpy as np
@@ -19,13 +21,13 @@ img_path = sys.argv[1]
 model = tf.keras.models.load_model(model_path)
 
 if examiners.examiner_ML(img_path, model, model_input_size):
-    print('kruzhok_1')
-    exit()
+    print('kruzhok')
 
-cascade = cv2.CascadeClassifier(cascade_path)
+# import cascade
+#cascade = cv2.CascadeClassifier(cascade_path)
 
-if examiners.examiner_Cascade(img_path, cascade):
-    print('kruzhok_2')
+#if examiners.examiner_Cascade(img_path, cascade):
+    #print('kruzhok')
 
 
 
