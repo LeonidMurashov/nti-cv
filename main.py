@@ -6,8 +6,10 @@ import tensorflow as tf
 import cv2
 import sys
 
+
 model_input_size = (224, 224)
 model_path = 'weights/mobilenet-finetune/'
+
 
 if len(sys.argv) < 2:
     print('Provide img path as arg1\n')
@@ -15,11 +17,14 @@ if len(sys.argv) < 2:
 
 img_path = sys.argv[1]
 
+img = cv2.imread(img_path)
+if img is None:
+	print('Bad image')
+	exit(1)
+img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+
 # Load classifier
 model = tf.keras.models.load_model(model_path)
-
-img = cv2.imread(img_path)
-img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
 
 # Crop angles of 100x100 and enchance them
 padding = 100
@@ -45,8 +50,6 @@ result_whole = model(cv2.resize(img, model_input_size)[np.newaxis])[0][0].numpy(
 
 # Combine them
 result = result_patches or result_angles or result_whole
-
-print(result_patches, result_angles, result_whole)
 
 if result:
 	print('kruzhok')

@@ -1,13 +1,7 @@
 # Instruciton
 
-1. check requirements
-2. run main.py with image in arg1
-
-## Requirements
-
-- tensorflow [ pip3 install tf-nightly ]
-- numpy      [ pip3 install numpy ]
-- opencv     [ pip3 install opencv-python ]
+1. pip3 install requirements.txt
+2. python3 main.py data/img1.jpg
 
 ## Algorithm
 
