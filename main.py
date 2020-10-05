@@ -22,13 +22,12 @@ model = tf.keras.models.load_model(model_path)
 
 if examiners.examiner_ML(img_path, model, model_input_size):
     print('kruzhok')
-    exit()
 
 # import cascade
-cascade = cv2.CascadeClassifier(cascade_path)
+#cascade = cv2.CascadeClassifier(cascade_path)
 
-if examiners.examiner_Cascade(img_path, cascade):
-    print('kruzhok')
+#if examiners.examiner_Cascade(img_path, cascade):
+    #print('kruzhok')
 
 
 
