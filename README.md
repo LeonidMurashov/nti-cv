@@ -6,12 +6,12 @@
 
 ## Algorithm
 
-1. We created synthetic dataset by applying augmentation transformations to target symbol and glueing it on images from ImageNet. Example of transformations:  
+1. We created synthetic dataset by applying augmentation transformations to target symbol and glueing it on images from ImageNet. See [synth_dataset.ipynb](synth_dataset.ipynb). Example of transformations:  
 
 ![Augmentations](visualizations/augmentations.jpg)
 
-2. We fine-tuned Mobile-Net classifier to recognize symbol on images of size 244x244.  
-3. Given source image, we divide it into segments of size 244x244 and run them through classifier. If classifier detects target symbol on any of the segments, algorithm classifies source image as containing symbol.  
+2. We fine-tuned Mobile-Net classifier to recognize symbol on images of size 244x244. See [transfer_learning.ipynb](transfer_learning.ipynb)  
+3. Given source image, we divide it into segments of size 244x244 and run them through classifier. If classifier detects target symbol on any of the segments, algorithm classifies source image as containing symbol. See [mobilenet-cascade.ipynb](mobilenet-cascade.ipynb)  
 
 Detection visualization:  
 ![Augmentations](visualizations/detection-examples.jpg)
