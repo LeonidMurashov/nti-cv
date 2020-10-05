@@ -22,6 +22,7 @@ if examiners.examiner_ML(img_path, model, model_input_size):
     print('kruzhok_1')
     exit()
 
+# import cascade
 cascade = cv2.CascadeClassifier(cascade_path)
 
 if examiners.examiner_Cascade(img_path, cascade):
